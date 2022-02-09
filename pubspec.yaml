@@ -1,0 +1,59 @@
+name: m7laty
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  http: ^0.13.1
+  localize_and_translate: ^4.1.1
+  bot_toast: ^4.0.1
+  provider: ^6.0.1
+  animations: ^2.0.2
+  flip_card: ^0.6.0
+  flutter_rating_bar: ^4.0.0
+  url_launcher: 
+  file_picker: ^4.3.3
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    # Localization assets
+    - assets/lang/en.json
+    - assets/lang/ar.json
+      # images
+    - assets/images/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/Cairo-Black.ttf
+        - asset: assets/fonts/Cairo/Cairo-Bold.ttf
+        - asset: assets/fonts/Cairo/Cairo-ExtraLight.ttf
+        - asset: assets/fonts/Cairo/Cairo-Light.ttf
+        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
