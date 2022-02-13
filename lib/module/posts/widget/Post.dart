@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m7laty/module/posts/widget/comment_widget.dart';
 import 'package:m7laty/styles/default_theme.dart';
 
 class PostBody extends StatefulWidget {
@@ -29,19 +30,7 @@ class _PostBodyState extends State<PostBody> {
         childrenPadding: EdgeInsets.all(5),
         expandedAlignment: Alignment.topRight,
         children: [
-          Container(
-            height: (MediaQuery.of(context).size.height * .2),
-            child: ListView(
-              children: comment.map((e) {
-                return Container(
-                    margin: EdgeInsets.all(3),
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                            color: DefaultTheme.lightSecondaryColor, width: 1)),
-                    child: Text(e));
-              }).toList(),
-            ),
-          ),
+          CommentWidget(list: comment.length),
           Row(
             children: [
               SizedBox(
